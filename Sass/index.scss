@@ -495,12 +495,13 @@ header {
   .manage_middle {
     > h1 {
       width: 485px;
+      margin: 0 auto;
       text-align: right;
       font-size: 30px;
       margin-bottom: 40px;
     }
     > p {
-      width: 485px;
+      font-size: 15px;
       text-align: center;
       margin-bottom: 20px;
     }
@@ -529,6 +530,10 @@ header {
           @include app_btn(#5f2ded, $white_color);
         }
       }
+    }
+    //
+    .manage_main_img {
+      text-align: center;
     }
   }
   //   manage middle end
@@ -559,7 +564,7 @@ header {
       .image_1 {
         position: absolute;
         top: -115px;
-        left: -48px;
+        left: -30px;
       }
 
       .image_2 {

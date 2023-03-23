@@ -430,12 +430,13 @@ header .header_div .login_button .trial_btn:hover {
 }
 .manage_app .manage_middle > h1 {
   width: 485px;
+  margin: 0 auto;
   text-align: right;
   font-size: 30px;
   margin-bottom: 40px;
 }
 .manage_app .manage_middle > p {
-  width: 485px;
+  font-size: 15px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -471,6 +472,9 @@ header .header_div .login_button .trial_btn:hover {
   padding: 12px 20px;
   outline: none;
 }
+.manage_app .manage_middle .manage_main_img {
+  text-align: center;
+}
 .manage_app .manage_app_profile {
   display: flex;
   justify-content: space-between;
@@ -495,7 +499,7 @@ header .header_div .login_button .trial_btn:hover {
 .maintain_yourself .maintain_img .image_div .image_1 {
   position: absolute;
   top: -115px;
-  left: -48px;
+  left: -30px;
 }
 .maintain_yourself .maintain_img .image_div .image_2 {
   position: absolute;
