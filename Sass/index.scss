@@ -91,9 +91,21 @@ header {
         padding: 16px 25px;
         outline: none;
         font-weight: bold;
+
+        &:hover {
+          background-color: $trial_btn_bgcolor;
+          color: $white_color;
+        }
       }
+
       .trial_btn {
-        @include trial_btn($trial_btn_bgcolor, $white_color);
+        @include trial_btn(#fff, #000);
+        border: 1px solid rgba(95, 122, 163, 0.15);
+
+        &:hover {
+          background-color: $trial_btn_bgcolor;
+          color: $white_color;
+        }
       }
     }
   }
@@ -141,13 +153,24 @@ header {
       @include flexItems(flex-start, center);
       gap: 30px;
       :first-child {
-        @include trial_btn($trial_btn_bgcolor, $white_color);
+        @include trial_btn(#fff, #000);
+        border: 1px solid rgba(95, 122, 163, 0.15);
+
+        &:hover {
+          background-color: $trial_btn_bgcolor;
+          color: $white_color;
+        }
       }
 
       :nth-child(2) {
         @include trial_btn(white, black);
         border: 1px solid rgba(95, 122, 163, 0.15);
         border-radius: 3px;
+
+        &:hover {
+          background-color: $trial_btn_bgcolor;
+          color: $white_color;
+        }
       }
     }
 
@@ -413,14 +436,12 @@ header {
         @include flexItems(flex-start, center);
         gap: 10px;
 
-        :nth-child(1) {
-          @include app_btn(#5f2ded, $white_color);
-        }
-        :nth-child(2) {
+        button {
           @include app_btn($white_color, #000);
-        }
-        :nth-child(3) {
-          @include app_btn($white_color, #000);
+
+          &:hover {
+            @include app_btn(#5f2ded, $white_color);
+          }
         }
       }
 
@@ -948,6 +969,7 @@ header {
 
     .copy_rights {
       color: #677294;
+      font-weight: bold;
     }
 
     .icon_div {
