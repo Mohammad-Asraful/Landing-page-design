@@ -848,4 +848,8 @@ header .header_div .login_button .trial_btn:hover {
   border-radius: 50px;
   background-color: rgba(191, 191, 191, 0.2509803922);
   color: #5f2ded;
+}
+.footer .footer_div .icon_div a:hover {
+  background-color: #5f2ded;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
